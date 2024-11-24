@@ -5,6 +5,7 @@ import androidx.compose.foundation.Image
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.Button
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -20,6 +21,8 @@ import androidx.compose.ui.unit.sp
 import com.example.artspace.model.Image
 
 import com.example.artspace.data.DataSource
+import com.example.artspace.ui.theme.ArtistTextStyle
+import com.example.artspace.ui.theme.YearTextStyle
 
 @Composable
 fun AppScreen(
@@ -70,8 +73,18 @@ fun DisplayArtwork(image: Image) {
             fontWeight = FontWeight.Bold,
             fontSize = 20.sp
         )
-        Text(text = stringResource(id = image.artistResId), fontSize = 16.sp, color = Color.Gray)
-        Text(text = stringResource(id = image.yearResId), fontSize = 14.sp, color = Color.Gray)
+        Text(
+            text = stringResource(id = image.titleResId),
+            style = MaterialTheme.typography.headlineLarge
+        )
+        Text(
+            text = stringResource(id = image.artistResId),
+            style = ArtistTextStyle
+        )
+        Text(
+            text = stringResource(id = image.yearResId),
+            style = YearTextStyle
+        )
     }
 }
 
