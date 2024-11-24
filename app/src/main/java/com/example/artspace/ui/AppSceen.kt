@@ -70,11 +70,6 @@ fun DisplayArtwork(image: Image) {
         Spacer(modifier = Modifier.height(16.dp))
         Text(
             text = stringResource(id = image.titleResId),
-            fontWeight = FontWeight.Bold,
-            fontSize = 20.sp
-        )
-        Text(
-            text = stringResource(id = image.titleResId),
             style = MaterialTheme.typography.headlineLarge
         )
         Text(
