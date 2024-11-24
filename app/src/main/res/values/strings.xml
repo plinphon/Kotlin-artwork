@@ -1,0 +1,21 @@
+<resources>
+    <!-- App Name -->
+    <string name="app_name">Artspace</string>
+
+    <!-- Artwork Titles -->
+    <string name="monalisa">Mona Lisa</string>
+    <string name="starry_night">Starry Night</string>
+    <string name="the_scream">The Scream</string>
+    <string name="van_gogh">Van Gogh (with straw hat)</string>
+
+    <!-- Artists -->
+    <string name="artist_davinci">Leonardo da Vinci</string>
+    <string name="artist_van_gogh">Vincent van Gogh</string>
+    <string name="artist_edvard_munch">Edvard Munch</string>
+
+    <!-- Years -->
+    <string name="year_monalisa">1503</string>
+    <string name="year_starry_night">1889</string>
+    <string name="year_the_scream">1893</string>
+    <string name="year_van_gogh">1887</string>
+</resources>
